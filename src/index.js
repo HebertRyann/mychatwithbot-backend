@@ -12,6 +12,10 @@ let currentRoom = '';
 let socketId = '';
 let users = [];
 
+app.get('/', (req, res) => {
+  res.send('hello');
+})
+
 io.on('connection', (socket) => {
   socket.on('join', ({ name, room }) => {
     users.push({ id: `${socket.id}`, name });
