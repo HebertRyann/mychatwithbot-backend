@@ -12,6 +12,12 @@ const app = (0, _express.default)();
 
 const server = require('http').createServer(app);
 
+app.use(cors());
+
+app.get('/', (req, res) => {
+  res.send('Hello');
+})
+
 const io = require("socket.io")(server, {
   cors: {
     origin: "https://chatwithbotteste.herokuapp.com",
