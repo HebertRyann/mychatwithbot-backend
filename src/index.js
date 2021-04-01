@@ -1,6 +1,6 @@
-const express = require('express');
-const app = express();
-const http = require('http').createServer(app);
+// const express = require('express');
+// const app = express();
+const http = require('http').createServer();
 const io = require('socket.io')(http, {
   cors: {
     origin: '*',
@@ -12,9 +12,9 @@ let currentRoom = '';
 let socketId = '';
 let users = [];
 
-app.get('/', (req, res) => {
-  res.send('hello');
-})
+// app.get('/', (req, res) => {
+//   res.send('hello');
+// })
 
 io.on('connection', (socket) => {
   socket.on('join', ({ name, room }) => {
@@ -35,6 +35,6 @@ io.on('connection', (socket) => {
   });
 });
 
-http.listen(( process.env.PORT), () => {
+http.listen(( process.env.PORT || 3333), () => {
   console.log('Server Started on Port 3333');
 });
