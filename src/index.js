@@ -35,6 +35,6 @@ io.on('connection', (socket) => {
   });
 });
 
-http.listen(( process.env.PORT || 3333), () => {
+http.listen(( process.env.PORT), () => {
   console.log('Server Started on Port 3333');
 });
