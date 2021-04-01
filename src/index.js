@@ -17,7 +17,7 @@ app.use(cors());
 
 const io = require("socket.io")(server, {
   cors: {
-    origin: "https://chatwithbotteste.herokuapp.com",
+    origin: "https://determined-williams-1f094a.netlify.app/",
     methods: ["GET", "POST"]
   }
 });
