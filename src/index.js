@@ -14,9 +14,6 @@ const server = require('http').createServer(app);
 
 app.use(cors());
 
-app.get('/', (req, res) => {
-  res.send('Hello');
-})
 
 const io = require("socket.io")(server, {
   cors: {
@@ -856,6 +853,6 @@ io.on("connection", socket => {
     });
   });
 });
-server.listen(3333, () => {
+server.listen(( process.env.PORT || 3333), () => {
   console.log('Server started on port 3333');
 });
