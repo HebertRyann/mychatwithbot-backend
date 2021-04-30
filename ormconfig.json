@@ -1,0 +1,22 @@
+[
+  {
+    "name": "default",
+    "type": "sqlite",
+    "database": "./src/database/database.sqlite",
+    "migrations": ["./src/database/migrations/**.ts"],
+    "entities": ["./src/entities/**.ts"],
+    "cli": {
+      "migrationsDir": "./src/database/migrations"
+    }
+ },
+ {
+   "name": "mongo",
+    "type": "mongodb",
+    "url": "mongodb+srv://mychat:G8FBuIjqI01MOIRf@cluster0.dww2o.mongodb.net/test",
+    "useUnifiedTopology": true,
+    "logging": true,
+    "database": "friend",
+    "synchronize": true,
+    "entities": ["./src/schemas/**.ts"]
+  }
+]
