@@ -10,13 +10,14 @@
     }
  },
  {
-   "name": "mongo",
+    "name": "mongo",
     "type": "mongodb",
-    "url": "mongodb+srv://mychat:G8FBuIjqI01MOIRf@cluster0.dww2o.mongodb.net/test",
+    "host": "localhost",
+    "port": 27017,
+    "database": "friends",
     "useUnifiedTopology": true,
-    "logging": true,
-    "database": "friend",
-    "synchronize": true,
-    "entities": ["./src/schemas/**.ts"]
-  }
+    "entities": [
+      "./src/schemas/*.ts"
+    ]
+  } 
 ]

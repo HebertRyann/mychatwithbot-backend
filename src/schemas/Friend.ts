@@ -1,4 +1,5 @@
-import { Column, Entity, PrimaryColumn } from 'typeorm';
+import { Column, Entity, ObjectType, PrimaryColumn } from 'typeorm';
+import { User } from '../entities/User';
 
 @Entity('friend')
 class Friend {
@@ -7,7 +8,11 @@ class Friend {
   userName: string;
 
   @Column()
-  friends: string
+  friends: [
+    {
+      name: string;
+    }
+  ];
 };
 
 export { Friend };
