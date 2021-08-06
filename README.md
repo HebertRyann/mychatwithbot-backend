@@ -68,13 +68,13 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ### Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [SQLite](https://www.sqlite.org/index.html), [MongoDB](https://www.mongodb.com/pt-br). Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
 ### 🎲 Rodando o Backend (Servidor)
 
 ```bash
 # Clone este repositório
-$ git clone https://github.com/HebertRyann/chatbotTest
+$ git clone https://github.com/HebertRyann/mychatwithbot-backend
 
 # Acesse a pasta do projeto no terminal/cmd
 $ cd mychatwithbot-backend
@@ -85,7 +85,7 @@ $ npm install
 # Execute a aplicação em modo de desenvolvimento
 $ npm run dev
 
-# A pagina web ficara disponivel localmente e voce pode acessar atraves de <http://localhost:3000>
+# O Servidor ficar disponivel em <http://localhost:3333>
 ```
 
 ### Autor
