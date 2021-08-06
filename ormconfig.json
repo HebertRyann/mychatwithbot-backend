@@ -1,0 +1,22 @@
+[
+  {
+    "name": "default",
+    "type": "sqlite",
+    "database": "./src/database/database.sqlite",
+    "migrations": ["./src/database/migrations/**.ts"],
+    "entities": ["./src/entities/*.ts"],
+    "cli": {
+      "migrationsDir": "./src/database/migrations"
+    }
+  },
+  {
+    "name": "mongo",
+    "type": "mongodb",
+    "entities": ["./src/schemas/*.ts"],
+    "host": "localhost",
+    "port": 27017,
+    "database": "notifications",
+    "useUnifiedTopology": true
+  }
+  
+]
