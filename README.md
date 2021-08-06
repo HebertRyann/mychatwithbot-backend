@@ -77,7 +77,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 $ git clone https://github.com/HebertRyann/chatbotTest
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd chatbotTest
+$ cd mychatwithbot-backend
 
 # Instale as dependências
 $ npm install
