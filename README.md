@@ -74,16 +74,16 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 
 ```bash
 # Clone este repositório
-$ git clone https://github.com/HebertRyann/mychatwithbot
+$ git clone https://github.com/HebertRyann/chatbotTest
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd mychatwithbot
+$ cd chatbotTest
 
 # Instale as dependências
 $ npm install
 
 # Execute a aplicação em modo de desenvolvimento
-$ npm run start
+$ npm run dev
 
 # A pagina web ficara disponivel localmente e voce pode acessar atraves de <http://localhost:3000>
 ```
