@@ -20,4 +20,4 @@ class Connection {
   created_at: string;
 };
 
-export { Connection };
+export default Connection;

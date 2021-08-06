@@ -15,7 +15,12 @@ routes.get('/', (request, response) => {
 });
 
 routes.post('/user', userControllers.create)
+routes.get('/user/:userName', userControllers.loadAllUsers)
 
+routes.get('/friend/list/:userName', friendControllers.findFriendsByUser)
+routes.get('/friend/list/solicitation/:userName', friendControllers.findAllPendingByUser)
 routes.post('/friend', friendControllers.create)
+routes.get('/friend/accept/:id', friendControllers.acceptRequest)
+routes.get('/friend/reject/:id', friendControllers.undoFriendship)
 
 export default routes;

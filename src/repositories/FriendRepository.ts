@@ -1,8 +1,8 @@
-import { EntityRepository, MongoRepository } from "typeorm";
-import { Friend } from "../schemas/Friend";
+import { EntityRepository, MongoRepository, Repository } from "typeorm";
+import { Friend } from '../entities/Friends';
 
 @EntityRepository(Friend)
-class FriendRepository extends MongoRepository<Friend> {
+class FriendRepository extends Repository<Friend> {
 };
 
 export { FriendRepository };

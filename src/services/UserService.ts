@@ -1,6 +1,9 @@
 import { getCustomRepository, Repository } from "typeorm";
+import { Friend } from "../entities/Friends";
 import { User } from "../entities/User";
+import { FriendRepository } from "../repositories/FriendRepository";
 import { UserRepository } from "../repositories/UserRepository";
+import { FriendService } from "./FriendService";
 
 interface IUserCreate {
 
@@ -32,6 +35,14 @@ class UserService {
     await this.userRepository.save(user);
 
     return user
+  };
+  
+
+  async loadAllUsers(userName: string) {
+    const friendService = new FriendService();
+    const allUsers = (await this.userRepository.find()).filter(user => user.userName !== userName);
+    return allUsers;
+    
   };
 }
 

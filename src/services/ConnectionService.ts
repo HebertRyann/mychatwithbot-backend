@@ -1,5 +1,5 @@
 import { getCustomRepository, Repository } from "typeorm";
-import { Connection } from "../entities/Connection";
+import Connection from "../entities/Connection";
 import { ConnectionRepository } from "../repositories/ConnectionRepository";
 
 interface IConnectionCreate {
