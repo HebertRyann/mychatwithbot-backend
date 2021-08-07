@@ -9,11 +9,11 @@
 </h3> -->
 
 <p align="center">
-  Plataforma criada para alem de propor uma comunicação com seus amigos conseguir jogar algo em grupo e torna as conversas bem mais divertidas. Tudo isso gerenciado por um bot de facil interação alem de engraçado
+  Plataforma criada para além de propor uma comunicação com seus amigos conseguir jogar algo em grupo e torna as conversas bem mais divertidas. Tudo isso gerenciado por um bot de fácil interação além de engraçado
 </p>
 
 <h4 align="center"> 
-🚀 MyChatWithBot(Backend) Em Andamento 🚧
+ 🚧 MyChatWithBot(Backend) Em Andamento 🚧
 </h4>
 
 <!-- <h2>
@@ -85,7 +85,28 @@ $ npm install
 # Execute a aplicação em modo de desenvolvimento
 $ npm run dev
 
-# O Servidor ficar disponivel em <http://localhost:3333>
+# O Servidor ficará disponivel em <http://localhost:3333>
+```
+
+### Rotas da aplicação
+## Usuario
+```bash
+POST http://localhost:3333/user (Criar um usuario) 
+
+GET http://localhost:3333/user/: <Nome do usuario conectado> (Lista todos os usuarios exceto o atual) 
+```
+
+## Amizade/Relacionamento
+```bash
+GET http://localhost:3333/friend/list/: <Nome do usuario conectado> (Lista todos os amigos do atual usuario)
+
+GET http://localhost:3333/friend/solicitation/list: <Nome do usuario conectado> (Lista todas as solicitaçoes de amizade pendentes)
+
+POST http://localhost:3333/friend (Cria um pedido de amizade)
+
+GET http://localhost:3333/friend/accept/: <ID da Solicitação de amizade> (Aceita a solicitação)
+
+GET http://localhost:3333/friend/reject/: <ID da Solicitação de amizade> (Rejeita a solicitação)
 ```
 
 ### Autor
