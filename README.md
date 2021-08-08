@@ -89,7 +89,7 @@ $ npm run dev
 ```
 
 ### Rotas da aplicação
-## Usuarios
+#### Usuarios
 ```bash
 GET http://localhost:3333/user/: <Nome do usuário atual> (Lista todos os usuários existentes exceto o atual)
 
@@ -99,7 +99,7 @@ Exemplo:
   username: <Nome de usuário>
 }
 ```
-## Amizades/Relacionamento
+#### Amizades/Relacionamento
 ```bash
 GET http://localhost:3333/friend/list/: <Nome do usuário atual> (Lista todos os amigos do usuário atual)
 
