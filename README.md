@@ -42,7 +42,7 @@
 
 <p align="center">
  <a href="#-tecnologias">Tecnologias</a> • 
- <a href="#rotas">Rotas</a> •
+ <a href="#rotas-da-aplicação">Rotas</a> •
  <a href="#autor">Autor</a>
 </p>
 
